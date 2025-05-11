@@ -1,1 +1,0 @@
-import"../../chunk-JR557W27.mjs";import{CustomError as e}from"./index";class t extends e{constructor(o,r){super(404,o||"Resources Not Found!");this.content=r;this.name="NotFoundError",this.content=r,Object.setPrototypeOf(this,t.prototype)}}var u=t;export{u as default};

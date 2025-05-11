@@ -1,1 +1,0 @@
-import"../../chunk-JR557W27.mjs";import{CustomError as o}from"./index";class r extends o{constructor(t,e){super(500,t||"Internal Server Error!");this.content=e;this.name="InternalServerError",this.content=e,Object.setPrototypeOf(this,r.prototype)}}var p=r;export{p as default};

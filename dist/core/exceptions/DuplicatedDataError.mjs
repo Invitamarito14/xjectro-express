@@ -1,1 +1,0 @@
-import"../../chunk-JR557W27.mjs";import{CustomError as o}from"./index";class t extends o{constructor(e,r){super(409,e||"The data is already in the database!");this.content=r;this.name="DuplicatedDataError",this.content=r,Object.setPrototypeOf(this,t.prototype)}}var n=t;export{n as default};

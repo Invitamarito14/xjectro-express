@@ -1,7 +1,7 @@
 {
   "name": "@xjectro/express",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Node.js package providing an Express.js server core and helper tools, compatible with both ESM and CommonJS.",
   "keywords": [
     "express",

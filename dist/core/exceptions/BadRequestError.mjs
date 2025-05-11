@@ -1,1 +1,0 @@
-import"../../chunk-JR557W27.mjs";import{CustomError as o}from"./index";class t extends o{constructor(e,r){super(400,e||"Bad Request");this.content=r;this.name="BadRequestError",this.content=r,Object.setPrototypeOf(this,t.prototype)}}var u=t;export{u as default};

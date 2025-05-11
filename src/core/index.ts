@@ -18,6 +18,7 @@ class ServerCore extends Emitter<ServerCoreEvents> {
     this.options = options;
 
     this.app.use(morgan('dev'));
+
     if (options.cors) {
       this.app.use(cors(options.cors));
     }
