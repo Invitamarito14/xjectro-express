@@ -1,0 +1,1 @@
+import"../../chunk-JR557W27.mjs";import{CustomError as e}from"./index";class t extends e{constructor(o,r){super(403,o||"You are not allowed to access this resource!");this.content=r;this.name="ForbiddenAccessError",this.content=r,Object.setPrototypeOf(this,t.prototype)}}var n=t;export{n as default};

@@ -1,0 +1,1 @@
+import"../chunk-JR557W27.mjs";import*as r from"jsonwebtoken";function i(e){return`${e}_SECRET`}function s(e,n){const t=i(n.secret),o={expiresIn:n.expiresIn};return r.sign(e,t,o)}function c(e,n){try{const t=i(n.secret);return r.verify(e,t)}catch{throw new Error("Invalid or expired token")}}export{s as generateToken,c as verifyToken};

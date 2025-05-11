@@ -1,0 +1,113 @@
+{
+  "name": "@xjectro/express",
+  "private": false,
+  "version": "1.0.2",
+  "description": "A Node.js package providing an Express.js server core and helper tools, compatible with both ESM and CommonJS.",
+  "keywords": [
+    "express",
+    "express.js",
+    "server",
+    "nodejs",
+    "typescript",
+    "middleware",
+    "validation",
+    "jwt",
+    "hash",
+    "id-generator"
+  ],
+  "license": "MIT",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xjectro/xjectro-express.git"
+  },
+  "homepage": "https://github.com/Xjectro/xjectro-express#readme",
+  "bugs": {
+    "url": "https://github.com/Xjectro/xjectro-express/issues"
+  },
+  "author": "xjectro",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    "./core": {
+      "types": "./dist/core/index.d.ts",
+      "import": "./dist/core/index.mjs",
+      "require": "./dist/core/index.cjs"
+    },
+    "./core/handlers": {
+      "types": "./dist/core/handlers/index.d.ts",
+      "import": "./dist/core/handlers/index.mjs",
+      "require": "./dist/core/handlers/index.cjs"
+    },
+    "./core/exceptions": {
+      "types": "./dist/core/exceptions/index.d.ts",
+      "import": "./dist/core/exceptions/index.mjs",
+      "require": "./dist/core/exceptions/index.cjs"
+    },
+    "./core/middleware/*": {
+      "types": "./dist/core/middleware/*.d.ts",
+      "import": "./dist/core/middleware/*.mjs",
+      "require": "./dist/core/middleware/*.cjs"
+    },
+    "./core/response": {
+      "types": "./dist/core/response/index.d.ts",
+      "import": "./dist/core/response/index.mjs",
+      "require": "./dist/core/response/index.cjs"
+    },
+    "./core/types": {
+      "types": "./dist/core/types/index.d.ts",
+      "import": "./dist/core/types/index.mjs",
+      "require": "./dist/core/types/index.cjs"
+    },
+    "./crypto": {
+      "types": "./dist/crypto/index.d.ts",
+      "import": "./dist/crypto/index.mjs",
+      "require": "./dist/crypto/index.cjs"
+    },
+    "./jwt": {
+      "types": "./dist/jwt/index.d.ts",
+      "import": "./dist/jwt/index.mjs",
+      "require": "./dist/jwt/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "start": "node dist/index.cjs",
+    "lint": "eslint \"src/**/*.{ts,js}\" --fix",
+    "format": "prettier --write \"src/**/*.{ts,js,json,md}\"",
+    "typecheck": "tsc --noEmit",
+    "release": "npm version patch && npm run build && npm publish"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "strict-event-emitter": "^0.5.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.18",
+    "@types/express-session": "^1.18.1",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/morgan": "^1.9.9",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "node": "^24.0.1",
+    "prettier": "^3.5.3",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}

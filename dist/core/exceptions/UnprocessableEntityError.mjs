@@ -1,0 +1,1 @@
+import"../../chunk-JR557W27.mjs";import{CustomError as e}from"./index";class t extends e{constructor(r,o){super(422,r||"Unprocessable Entity");this.content=o;this.name="UnprocessableEntityError",this.content=o,Object.setPrototypeOf(this,t.prototype)}}var p=t;export{p as default};

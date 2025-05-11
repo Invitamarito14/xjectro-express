@@ -1,0 +1,1 @@
+import"../../chunk-JR557W27.mjs";import{CustomError as e}from"./index";class t extends e{constructor(o,r){super(401,o||"You need to login to access this resource!");this.content=r;this.name="UnauthorizedError",this.content=r,Object.setPrototypeOf(this,t.prototype)}}var c=t;export{c as default};

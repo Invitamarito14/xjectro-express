@@ -1,0 +1,1 @@
+import"../chunk-JR557W27.mjs";import{createHash as u,randomBytes as c}from"crypto";function g(t,e){const n=Date.now(),o=Object.entries(e).map(([a,i])=>`${a}-${i}`).join("-"),r=`${n}-${o}`,s=u("md5").update(r).digest(t);return`${n}-${s}`}function p(){const t=Date.now(),e=c(8).toString("hex");return`${t}-${e}`}export{g as generateHash,p as generateId};
